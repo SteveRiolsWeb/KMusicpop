@@ -1,0 +1,178 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    position: -webkit-sticky; /* Para compatibilidad con Safari */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between; /* Distribuye los iconos en los extremos */
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Ajusta el tamaño del Logo según sea necesario */
+    width: 50px; /* Ajusta el tamaño según lo necesites */
+    border-radius: 30%; /* Esto hace que la imagen sea redonda */
+    object-fit: cover; /* Esto asegura que la imagen se ajuste bien dentro del contenedor redondo */
+    margin-right: 10px;
+}
+
+.icon-group-left, .icon-group-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon-group-left a, .icon-group-right a {
+    margin-left: 10px;
+}
+
+.icon-group-right {
+    height: 60px; /* Limita la altura del contenedor derecho */
+}
+
+.buy {
+    height: 50px; /* Ajusta la altura de la imagen de la tienda */
+    width: 50px; /* Ajusta la anchura de la imagen de la tienda */
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor */
+}
+
+.content {
+    padding: 20px;
+    color: white;
+}
+
+.banner {
+    background-image :url(fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 800px;
+}
+
+
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-left: 50%;
+    padding-top: 640px;
+}
+
+.banner__descripcion {
+    color: whitesmoke;
+    background-image: linear-gradient(180deg, transparent, rgba(3,3,3,0.61),#000);
+    width: 100%;
+    height: 50px;
+}
+
+
+/*.paronama {
+    width: 100% ;
+    height: 600px ;
+    object-fit: cover;
+    padding-bottom: 20px ;
+}*/
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background-color: #111; /* Color de fondo de los botones */
+    color: white; /* Color del texto de los botones */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%; /* Esto hace que la imagen sea redonda */
+}
+
+.nav-button:hover {
+    background-color: #555; /* Color de fondo al pasar el cursor */
+}
+
+.icon-container {
+    display: flex;
+    overflow-x: hidden; /* Ocultar el desbordamiento horizontal */
+    white-space: nowrap; /* Evitar que los íconos se envuelvan */
+    padding: 10px;
+    width: 95%; /* Ajustar el ancho del contenedor para que las flechas sean visibles */
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+.icon {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    color: white; /* Texto blanco */
+    margin-right: 10px; /* Espacio entre íconos */
+}
+
+.idols{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; /* Esto hace que la imagen sea redonda */
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.image-container {
+    display: flex;
+    gap: 10px; /* Espacio entre imágenes */
+}
+
+.image-container img {
+    width: 300px;
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.image-container img:hover {
+    transform: scale(1.2); /* Aumentar tamaño al pasar el cursor */
+}
+
+.portada {
+    width: 200px;
+}
+
+.referens {
+    display: flex;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+.text-section {
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: bold;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-XG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon-group-left">
+            <a href="/index.html">
+                <img src="Flecha.png" alt="Logo" class="logo">
+            </a>
+            <a href="https://www.youtube.com/@xg_official">
+                <img src="XG_3.png" alt="Logo" class="logo">
+            </a>
+        </div>
+        <div class="icon-group-right">
+            <a href="https://shop.xgalx.com/">
+                <img src="shop/Cars.png" alt="Tienda" class="buy">
+            </a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner__contents">
+            <h1 class="banner__title">XG</h1>
+            <div class="banner__descripcion"></div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-button" onclick="scrollIcons('left')">&lt;</button>
+        <div class="icon-container">
+            <div class="icon" onclick="showContent('originalContent')"><img src="XG_actual.jpg" alt="" class="idols"></div>
+            <div class="icon" onclick="showContent('content1')"><img src="img/idols/Jurin.jpg" alt="" class="idols">Jurin</div>
+            <div class="icon" onclick="showContent('content2')"><img src="img/idols/Juria.jpg" alt="" class="idols">Juria</div>
+            <div class="icon" onclick="showContent('content3')"><img src="img/idols/Chisa.jpeg" alt="" class="idols">Chisa</div>
+            <div class="icon" onclick="showContent('content4')"><img src="img/idols/Hinata.jpg" alt="" class="idols">Hinata</div>
+            <div class="icon" onclick="showContent('content5')"><img src="img/idols/Cocona.jpg" alt="" class="idols">Cocona</div>
+            <div class="icon" onclick="showContent('content6')"><img src="img/idols/Maya.jpg" alt="" class="idols">Maya</div>
+            <div class="icon" onclick="showContent('content7')"><img src="img/idols/Harvey.jpeg" alt="" class="idols">Harvey</div>
+        </div>
+        <button class="nav-button" onclick="scrollIcons('right')">&gt;</button>
+    </div>
+
+    <div id="originalContent" class="content active">
+        <h2>Videos Music</h2>
+        <div class="image-container">
+            <a href="/XGALX/Music/Woke up/index.html" target="_blank"><img src="/XGALX/SOMETHING.jpg" alt="Imagen 1"></a>
+            <a href="/XGALX/Music/Woke up/index.html" target="_blank"><img src="/XGALX/Woke_up.jpg" alt="Imagen 2"></a>
+            <a href="/XGALX/Music/UNDEFEATED/index.html" target="_blank"><img src="/XGALX/UNDEFEATED1.jpg" alt="Imagen 3"></a>
+            <a href="/XGALX/Music/SHOOTING STAR/index.html" target="_blank"><img src="/XGALX/SHOOTING_STAR.jpg" alt="Imagen 4"></a>
+            <a href="/XGALX/Music/LEFT RIGHT/index.html" target="_blank"><img src="/XGALX/LEFT_RIGHT.jpg" alt="Imagen 5"></a>
+        </div>
+        <h2>Album</h2>
+    </div>
+
+    <div id="content1" class="content">
+        <div class="referens">
+            <div class="image-section">
+                <img src="img/porta/WokePort.jpg" alt="Imagen">
+            </div>
+            <div class="text-section">
+                <p class="title">Woke up</p>
+                <p class="subtitle">Fancam Jurin</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="https://example.com/link4" target="_blank"><img src="img/Fancam1/JurinWokeFancam.jpg" alt="Imagen 6"></a>
+            <a href="https://example.com/link5" target="_blank"><img src="img/Fancam1/JurinWokeFancam1.jpg" alt="Imagen 7"></a>
+            <a href="https://example.com/link5" target="_blank"><img src="img/Fancam1/JurinWokeFancam2.jpg" alt="Imagen 8"></a>
+        </div>
+        <div class="referens">
+            <div class="image-section">
+                <img src="img/porta/ShottingPort.jpg" alt="Imagen">
+            </div>
+            <div class="text-section">
+                <p class="title">Shooting Star</p>
+                <p class="subtitle">Fancam Jurin</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="https://example.com/link4" target="_blank"><img src="img/Fancam1/JurinShottingFancam.jpg" alt="Imagen 9"></a>
+            <a href="https://example.com/link5" target="_blank"><img src="img/Fancam1/JurinShottingFancam.jpg" alt="Imagen 10"></a>
+        </div>
+    </div>
+
+    <div id="content2" class="content">
+        <div class="image-container">
+            <a href="https://example.com/link6" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 11"></a>
+        </div>
+        Contenido para Icono 2
+    </div>
+
+    <div id="content3" class="content">
+        <div class="image-container">
+            <a href="https://example.com/link7" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 12"></a>
+            <a href="https://example.com/link8" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 13"></a>
+        </div>
+        Contenido para Icono 3
+    </div>
+
+    <div id="content4" class="content">
+        <div class="image-container">
+            <a href="https://example.com/link7" target="_blank"><img src="img/Fancam1/HinataWokeFancam.jpg" alt="Imagen 14"></a>
+            <a href="https://example.com/link8" target="_blank"><img src="img/Fancam1/HinataWokeFancam1.jpg" alt="Imagen 15"></a>
+        </div>
+        contenido para Icono 4
+    </div>
+
+    <div id="content5" class="content">
+        <div class="image-container">
+            <a href="https://example.com/link7" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 16"></a>
+            <a href="https://example.com/link8" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 17"></a>
+        </div>
+        contenido para Icono 5
+    </div>
+
+    <div id="content6" class="content">
+        <div class="image-container">
+            <a href="https://example.com/link7" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 18"></a>
+            <a href="https://example.com/link8" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 19"></a>
+        </div>
+        contenido para Icono 6
+    </div>
+
+    <div id="content7" class="content">
+        <div class="image-container">
+            <a href="https://example.com/link7" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 20"></a>
+            <a href="https://example.com/link8" target="_blank"><img src="https://via.placeholder.com/100" alt="Imagen 21"></a>
+        </div>
+        contenido para Icono 7
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
