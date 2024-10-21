@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: flex-start;
+    background-color: #1c1c1c;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    width: 50;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #262626;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+button.active {
+    background-color: #454545;
+}
+
+#content-container {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+    margin-top: 20px;
+    position: relative;
+}
+
+#image, #video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Mantiene la proporción del video y la imagen */
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #000;
+    padding: 10px 20px;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1000; /* Encima del menú lateral */
+}
+
+.nav-left {
+    display: flex;
+    gap: 10px; /* Espacio entre los primeros tres iconos */
+}
+
+.nav-right {
+    margin-left: auto; /* Empuja el cuarto icono hacia la mitad de la pantalla */
+    margin-right: 50%; /* Ajusta la ubicación a la mitad de la pantalla */
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 55px;
+    margin: 0 20px;
+    flex-shrink: 0;
+}
+
+/* Menú lateral */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 999; /* Debajo de la barra superior */
+}
+
+.sidebar.open {
+    width: 15%;
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en vertical */
+}
+
+.sidebar.open > * {
+    margin-bottom: 10px; /* Agrega espacio inferior entre los elementos */
+}
+
+a {
+    color: aliceblue; /* Hereda el color del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.sidebar.open i {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
