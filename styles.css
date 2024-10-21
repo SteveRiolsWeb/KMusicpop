@@ -1,0 +1,215 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    width: 100%;
+    background-color: black;
+    padding: 5px 0;
+    position: -webkit-sticky; /* Para compatibilidad con Safari */
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 60px; /* Ajusta el tamaño del logo según sea necesario */
+    width: 80px;  /* Ajusta el tamaño según lo necesites */
+    object-fit: cover; /* Esto asegura que la imagen se ajuste bien dentro del contenedor redondo */
+}
+
+.nav-text {
+    color: white;
+    font-size: 20px; /* Ajusta el tamaño del texto según sea necesario */
+    margin-right: 5%;
+}
+
+.scroll-container {
+    width: 100%;
+    overflow-x: auto; /* Permite el scroll horizontal */
+    overflow-y: hidden;
+    white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    padding: 0; /* Asegúrate de que no haya padding */
+}
+
+/* Contenedor del contenido desplazable */
+.scroll-content {
+    display: flex; /* Usa flex para alinear los elementos */
+}
+
+/* Estilo de las imágenes individuales */
+.row__posterlarge{
+    display: inline-block; /* Cada elemento se mostrará en línea */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+}
+
+.row__poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 135px;
+    margin-right: 10px;
+    transition: trasform 450ms;
+}
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x:auto;
+    padding: 20px;
+}
+
+.row__poster:hover {
+    transform: scale(1.20);
+}
+
+.imagen-ajustada img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 135px;
+    margin-right: 10px;
+    transition: trasform 450ms;
+}
+
+.imagen-ajustada a img {
+    display: flex;
+    overflow-x: auto; /* Permite el scroll horizontal */
+    overflow-y: hidden;
+    white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    padding: 20px;
+}
+
+
+
+
+.row__posterlarge {
+    max-height: 275px;
+}
+
+.row__posterlarge:hover {
+    transform: scale(1.20);
+}
+
+.row {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(95, 158, 160);
+}
+
+.banner {
+    background-image :url(LE-SSERAFIM-Web/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    object-fit: contain;
+    height: 700px;
+}
+
+.banner__contents {
+    margin-left: 30px;
+    padding-top: 400px;
+    height: 190px;
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+.banner__descripcion {
+    color: whitesmoke;
+    background-color: rgba(51,51,51, 0.5);
+    width: 100%;
+    height: 100px ;
+}
+
+/*    width: 45rem;
+line-height: 1,3;
+padding-top: 1rem;
+font-size: 0.8rem;
+max-width: 500px;
+height: 300px;*/
+
+.banner__button {
+    cursor: pointer;
+    color: #ffff;
+    outline: none;
+    border: none;
+    font-weight: 70px;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51,51,51, 0.5);
+}
+
+.banner__button :hover {
+    color: #111;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+.banner--fadeBottom {
+    margin-top: 145px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61),#111);
+}
+
+.generacion{
+    overflow-x: auto; /* Permite el scroll horizontal */
+    overflow-y: hidden;
+    white-space: nowrap; /* Evita que los elementos se envuelvan a la siguiente línea */
+    padding: 0; /* Asegúrate de que no haya padding */
+    color: white;
+}
+
+.grupos{
+    width: 150px;
+    height: 200px;
+    padding-right: 20px;
+}
+
+.generacion img {
+    width: 150px;
+    transition: transform 0.3s; /* Transición suave */
+}
+
+.generacion img:hover {
+    transform: scale(1.2); /* Aumentar tamaño al pasar el cursor */
+}
+
+.portada {
+    width: 200px;
+}
+
+.referens {
+    display: flex;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+.text-section {
+    margin-left: 10px;
+    color: #e6e6e6;
+}
+
+.title {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: bold;
+}
