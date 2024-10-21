@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Lateral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra superior con varios íconos -->
+    <div class="top-bar">
+            <div class="nav-left">
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <button id="notificationButton">🔔</button>
+        <button id="settingsButton">⚙️</button>
+    </div>
+
+    <!-- Contenedor para el cuarto botón centrado a la mitad de la pantalla -->
+    <div class="nav-right">
+        <img src="/Flower.png" alt="Logo" class="logo">
+    </div>
+    </div>
+    <!-- Menú lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <a href="/prueba_MV/index.html"><i class="fa-sharp fa-light fa-house"></i>Principal</a>
+        <a href="#">Shorts</a>
+        <a href="#">Historial</a>
+        <a href="#">Playlists</a>
+        <a href="#">Videos que me gustan</a>
+    </div>
+    <div id="button-container">
+        <button id="music-btn">Música</button>
+        <button id="video-btn">Video</button>
+    </div>
+
+    <div id="content-container">
+        <img id="image" src="LEFT_RIGHT.jpeg" alt="Imagen de Música" style="display: none;">
+        <audio id="audio" src="LEFT_RIGHT.mp3" style="display: none;"></audio>
+        <video id="video" src="LEFT_RIGHT.webm" style="display: none;" controls></video>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
